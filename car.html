@@ -62,7 +62,7 @@
       iframe.contentWindow.postMessage(
         {
           type: "FROM_PARENT",
-          data: value
+          data: JSON.parse(value)
         },
         "*"
       );
